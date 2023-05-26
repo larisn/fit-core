@@ -151,6 +151,9 @@
   padding: 1.5rem 2rem;
   margin-top: 10rem;
   overflow-x: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   p {
     color: $white1;
     text-transform: uppercase;
