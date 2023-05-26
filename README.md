@@ -28,7 +28,7 @@
 
 
 ## 💮 Seções
-O site é possui por seis partes:
+O site é composto por seis partes:
 
 - **Home:** Nessa parte é uma breve apresentação da academia;
 - **Programas:** Mostra alguns programas de treino que a academia possui;
