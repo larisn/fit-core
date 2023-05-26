@@ -28,9 +28,10 @@
 
 
 ## 💮 Seções
-O site é possui por cinco partes:
+O site é possui por seis partes:
 
 - **Home:** Nessa parte é uma breve apresentação da academia;
+- **Programas:** Mostra alguns programas de treino que a academia possui;
 - **Planos:** Mostra os planos disponíveis para o cliente;
 - **App:** É onde instiga o usuário a fazer o download do aplicativo para celular;
 - **Dicas:** É o carrossel de posts do instagram, onde tem dicas para o cliente.;
