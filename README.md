@@ -23,7 +23,7 @@
 
 ## 🏋🏻‍♀️ Sobre
 
-> É um projeto de uma landing page de uma academia fictícia que desenvolvi para o teste da Inova Company. A obrigatoriedade era que tivesse um carrosel com posts fictícios do instagram, e que esses posts acompanhassem a identidade visual da página.
+> É um projeto de uma landing page de uma academia fictícia que desenvolvi para o teste da Inova Company. A obrigatoriedade era que tivesse um carrossel com posts fictícios do instagram, e que esses posts acompanhassem a identidade visual da página.
 <br>
 
 
