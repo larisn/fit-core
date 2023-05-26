@@ -1,0 +1,33 @@
+
+// fonts
+$font-main: 'Bai Jamjuree', sans-serif;
+$font-secondary: 'Barlow Condensed', sans-serif;
+
+
+// main colors
+$red-color: #BB162E;
+$red-dark: #7c1423;
+$red-insta: hsla(351, 79%, 41%, 0.726);
+$button: linear-gradient(130deg, $red-color 40%, $red-dark 100%);
+
+
+// dark colors
+$dark-bg: #08080D;
+$dark-secondary-bg: #0C0C10;
+$dark-card: #0E0E12;
+$dark-card-stroke: #181821;
+
+
+// white colors
+
+$white1: #ffffff;
+$white2: #B3B3B3;
+$white3: hsla(0, 0%, 16%, 0.29);
+$white4: hsla(0, 0%, 100%, 0.103);
+$white5: #dadada;
+
+
+// outlines
+
+$outline: 1px solid hsla(0, 0%, 60%, 0.075);
+$outline-nav: 1px solid #363636;

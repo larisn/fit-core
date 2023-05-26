@@ -1,0 +1,158 @@
+
+#s-home {
+  background: url(/assets/img/sec1-mobile.png) no-repeat;
+  background-size: cover;
+  padding-bottom: 7rem;
+  padding-left: 2.4rem;
+  @include responsive-small-mobile {
+    background-size: cover;
+    height: 720px;
+  }
+  @include responsive-tablet {
+    padding-bottom: 30rem;
+    background: url(/assets/img/sec1-tablet.png) no-repeat;
+    background-size: cover;
+  }
+  @include responsive-desktop {
+    padding-bottom: 7rem;
+    background: url(/assets/img/sec1-desktop.png) no-repeat; 
+    background-size: cover;
+  }
+  @include responsive-desktop-hd {
+    background: url(/assets/img/sec1.png) no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .container {
+    @include container;
+    h1 {
+      color: $white1;
+      text-transform: uppercase;
+      padding-top: 2.3em;
+      font-size: 4.5rem;
+      line-height: 60px;
+      max-width: 800px;
+      span {
+        color: $red-color;
+      }
+      @include responsive-small-mobile {
+        font-size: 3.5rem;
+        padding-top: 3em;
+        line-height: 50px;
+      }
+      @include responsive-tablet {
+        font-size: 7rem;
+        line-height: 90px;
+      }
+      @include responsive-desktop {
+        font-size: 7.5rem;
+        text-align: left;
+      }
+      @include responsive-desktop-hd {
+        font-size: 9.5rem;
+        line-height: 110px;
+      }
+    }
+    h2 {
+      color: $white1;
+      font-size: 1.6rem;
+      max-width: 400px;
+      font-weight: 400;
+      padding: 2rem 0;
+      line-height: 27px;
+      @include responsive-small-mobile {
+        font-size: 1.45rem;
+      }
+      @include responsive-tablet {
+        font-size: 2rem;
+        line-height: 35px;
+        max-width: 650px;
+        padding: 4rem 0;
+      }
+      @include responsive-desktop-hd {
+        font-size: 2.2rem;
+        max-width: 800px;
+        line-height: 40px;
+      }
+    }
+    a {
+      color: $white1;
+      background-color: $red-color;
+      padding: 1.5rem 2.5rem;
+      border-radius: 50px;
+      font-size: 1.5rem;
+      font-weight: 500;
+      transition: all .7s;
+      text-transform: uppercase;
+      &:hover {
+        max-width: 230px;
+        padding: 1.5rem 3.4rem;
+        filter: brightness(1.3);
+      }
+      @include responsive-small-mobile {
+        font-size: 1.3rem;
+        padding: 1.4rem 2rem;
+      }
+      @include responsive-tablet {
+        font-size: 1.85rem;
+      }
+    }
+    @include responsive-tablet {
+      padding-left: 5rem;
+    }
+  }
+}
+
+.container-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: $white1;
+  margin-top: 4rem;
+  h3 {
+    font-size: 2.5rem;
+    @include responsive-small-mobile {
+      font-size: 2.2rem;
+    }
+    @include responsive-tablet {
+      font-size: 3.5rem;
+      padding-bottom: .8rem;
+    }
+    @include responsive-desktop {
+      font-size: 3rem;
+      padding-bottom: .8rem;
+    }
+  }
+  p {
+    max-width: 70px;
+    color: $white2;
+    line-height: 20px;
+    font-size: 1.5rem;
+    @include responsive-small-mobile {
+      font-size: 1.3rem;
+      line-height: 18px;
+    }
+    @include responsive-tablet {
+      font-size: 1.7rem;
+      line-height: 22px;
+      max-width: 80px;
+    }
+    @include responsive-desktop {
+      font-size: 1.5rem;
+      max-width: 70px;
+    }
+  }
+  @include responsive-small-mobile {
+    gap: 10px;
+    margin-top: 2.5rem;
+  }
+  @include responsive-tablet {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6rem;
+    gap: 30px;
+  }
+  @include responsive-desktop {
+    margin-top: 5.5rem;
+  }
+}

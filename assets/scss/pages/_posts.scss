@@ -1,0 +1,116 @@
+
+#s-posts {
+  height: 355px;
+  background-color: $dark-bg;
+  padding: 0 9rem;
+  position: relative;
+  padding-top: 5rem;
+  img {
+    width: 320px;
+  }
+  .container {
+    margin: 0 auto;
+  }
+  @include responsive-small-mobile {
+    padding-top: 3rem;
+    height: 300px;
+  }
+  @include responsive-desktop {
+    padding: 5rem 8rem;
+    height: 1200%;
+  }
+  @include responsive-tablet {
+    height: 450px;
+  }
+}
+
+.posts-wrapper {
+  overflow-x: auto;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.posts {
+  display: flex;
+  flex-flow: nowrap;
+  gap: 20px;
+}
+
+.arrow-left,
+.arrow-right {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border: 3px solid $red-color;
+  border-radius: 50%;
+  padding: 10px;
+  top: 155px;
+  left: 10px;
+  transition: all .4s;
+  bottom: 0;
+  right: auto;
+  opacity: 0.2;
+  &:hover {
+    opacity: 100%;
+  }
+  @include responsive-small-mobile {
+    top: 120px;
+  }
+  @include responsive-tablet {
+    top: 190px;
+  }
+}
+
+.arrow-right {
+  left: auto;
+  right: 10px;
+}
+
+.circle-instagram {
+  position: absolute;
+  background-color: $red-insta;
+  border-radius: 50%;
+  height: 250px;
+  z-index: 1;
+  width: 250px;
+  cursor: pointer;
+  display: none;
+  &:hover {
+    background-color: #bb162fe1;
+  }
+  @include responsive-desktop {
+    display: block;
+    left: 500px;
+    top: 30px;
+  }
+  @include responsive-desktop-hd {
+    left: 800px;
+  }
+  div {
+    margin-top: 5rem;
+    img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 2rem;
+    }
+    p {
+      color: $white1;
+      font-size: 2rem;
+      text-align: center;
+      font-weight: 600;
+      line-height: 28px;
+    }
+  }
+}
+
+.item {
+  flex-shrink: 0;
+  opacity: 0.2;
+  transition: all 600ms ease-in-out;
+}
+
+.current-item {
+  opacity: 1;
+  border: 1px solid $red-color;
+}

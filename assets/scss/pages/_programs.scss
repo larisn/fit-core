@@ -1,0 +1,198 @@
+
+#s-programs {
+  background: url(/assets/img/sec2-mobile.png) no-repeat;
+  background-size: cover;
+  height: 1200%;
+  margin: 0 auto;
+  @include responsive-desktop {
+    background: url(/assets/img/sec2.png) no-repeat;
+    background-size: cover;
+  }
+  a {
+    color: $white1;
+    font-size: 1.6rem;
+    font-weight: 500;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 95%;
+      height: 2px;
+      bottom: -8px;
+      left: 2px;
+      background-color: $red-color;
+    }
+    &:hover {
+      &::before {
+        position: static;
+      }
+      color: $red-color;
+      transition: all .3s;
+    }
+  }
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2rem;
+    div {
+      text-align: left;
+      position: relative;
+      h1 {
+        position: absolute;
+        text-align: center;
+        padding: 0 30px;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        color: $white1;
+        font-size: 3rem;
+        @include responsive-tablet {
+          font-size: 5.5rem;
+          left: 40px;
+          top: 60px;
+        }
+        @include responsive-desktop {
+          font-size: 6rem;
+          left: 130px;
+          top: 55px;
+        }
+      }
+      span {
+        display: block;
+        color: $white3;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+        margin: 3rem auto 0 auto;
+        text-align: center;
+        margin-bottom: 7rem;
+        font: 600 6rem $font-secondary;
+        @include responsive-tablet {
+          font: 600 15rem $font-secondary;
+          letter-spacing: 8px;
+        }
+      }
+    }
+  }
+}
+
+.container-card-programs {
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+  min-height: auto;
+  padding: 0 30px;
+  flex: 1;
+  article {
+    width: 48%;
+    flex-grow: 1;
+    border-radius: 10px;
+    padding: 35px 24px 40px 24px;
+    background-color: $dark-card;
+    border: 2px solid $dark-card-stroke;
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    &:last-child {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      color: $white1;
+      font-weight: 600;
+      font-size: 2.5rem;
+      margin: 1.5rem 0;
+    }
+    p {
+      margin-bottom: 3rem;
+      color: $white1;
+      font-size: 1.4rem;
+      line-height: 24px;
+    }
+    a {
+      color: $white1;
+      font-size: 1.6rem;
+      font-weight: 500;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 95%;
+        height: 2px;
+        bottom: -8px;
+        left: 2px;
+        background-color: $red-color;
+      }
+      &:hover {
+        &::before {
+          position: static;
+        }
+        color: $red-color;
+        transition: all .3s;
+      }
+    }
+    @include responsive-tablet {
+      width: 48%;
+      min-height: auto;
+    }
+    @include responsive-desktop {
+      min-height: 320px;
+      width: 30%;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.strip {
+  @include flexbox-center;
+  gap: 20px;
+  background-color: $red-color;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  margin-top: 10rem;
+  overflow-x: auto;
+  p {
+    color: $white1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    white-space: nowrap;
+    font: 600 1.4rem $font-secondary;
+    @include responsive-small-mobile {
+      font: 600 1.4rem $font-secondary;
+    }
+    @include responsive-tablet {
+      font: 600 1.5rem $font-secondary;
+    }
+    @include responsive-desktop {
+      font: 700 2.2rem $font-secondary;
+    }
+    @include responsive-desktop-hd {
+      font: 700 2.8rem $font-secondary;
+    }
+  }
+  span {
+    content: "";
+    background-color: $white1;
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    @include responsive-tablet {
+      height: 9px;
+      width: 9px;
+    }
+    @include responsive-desktop {
+      height: 13px;
+      width: 13px;
+    }
+  }
+  @include responsive-tablet {
+    gap: 13px;
+    padding: 1.5rem 0;
+  }
+  @include responsive-desktop {
+    gap: 30px;
+  }
+  @include responsive-desktop-hd {
+    gap: 40px;
+  }
+}
