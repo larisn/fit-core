@@ -1,7 +1,6 @@
 
 const arrows = document.querySelectorAll('.arrow');
 const items = document.querySelectorAll('.item');
-const circleInsta = document.querySelectorAll('.circle-instagram');
 const maxItems = items.length;
 let currentItem = 0;
 
